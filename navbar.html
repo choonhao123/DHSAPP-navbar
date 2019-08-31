@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    </head>
+    <ul>
+        <li><a class="active" href='/'>Home</a></li>
+        <li><a href='/announcements'>Announcements</a></li>
+        <li><a href='/venues'>Flag-Raising Venue</a></li>
+        <li><a href='/about'>About</a></li>
+    </ul>
+    {% block content %}{% endblock %}
+</html>
